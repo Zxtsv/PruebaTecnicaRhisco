@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Prueba técnica Rhisco</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg justify-content-center">
+            <a class="navbar-brand nav-link" href="index.html">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F234%2F234648.png&f=1&nofb=1"
+                    width="30" height="30" class="d-inline-block align-top" alt="">
+                Gestión de biblioteca - Rhisco
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-vh-100">
+            <article>
+                <div class="jumbotron pb-0">
+                    <h1 class="title text-center">Añadir <a href="index.html"><button type="button" class="btn btn-primary ml-4">Inicio</button></a></h1>
+                </div>
+                <div class="container">
+                    <form>
+                        <div class="form-group row">
+                          <label for="staticTitle" class="col-sm-2 col-form-label">Titulo del libro</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="staticTitle" value="">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="staticAuthor" class="col-sm-2 col-form-label">Author</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="staticAuthor">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticNameLessor" class="col-sm-2 col-form-label">Nombre del Arrendador</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="staticNameLessor">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticLastName" class="col-sm-2 col-form-label">Apellido del arrendador</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="staticLastName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticDateLoan" class="col-sm-2 col-form-label">Fecha de termino <b>(Formato YYYY-MM-DD)</b></label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="staticDateLoan">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="enviar()">Añadir</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Scripts personalizados -->
+    <script src="js/add.js"></script>
+    <!-- Sweet Alerts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

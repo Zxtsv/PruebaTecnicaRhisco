@@ -1,0 +1,10 @@
+package com.rhisco.book.Repositorys;
+
+import com.rhisco.book.Models.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    @Query(value="SELECT id FROM tbl_users ORDER BY id DESC LIMIT 1", nativeQuery = true)
+    Long getLastId();
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Prueba técnica Rhisco</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg justify-content-center">
+            <a class="navbar-brand nav-link" href="#">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F234%2F234648.png&f=1&nofb=1"
+                    width="30" height="30" class="d-inline-block align-top" alt="">
+                Gestión de biblioteca - Rhisco
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-vh-100">
+            <article>
+                <div class="jumbotron pb-0">
+                    <h1 class="title text-center">Libros Reservados hasta el momento <a href="anadir.html"><button type="button" class="btn btn-primary ml-4">Añadir</button></a>
+                </div>
+                <div class="container">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Titulo del libro</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Arrendador</th>
+                                <th scope="col">Fecha de inicio</th>
+                                <th scope="col">Fecha de termino</th>
+                                <th scope="col">Dias restantes</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="app">
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Scripts personalizados -->
+    <script src="js/reservados.js"></script>
+    <!-- Sweet Alerts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
